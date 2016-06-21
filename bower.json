@@ -1,0 +1,19 @@
+{
+  "name": "chirr",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-console": "^0.1.0",
+    "purescript-batteries": "^0.5.4",
+    "purescript-prelude": "^0.1.5",
+    "purescript-eff": "^0.1.2",
+    "purescript-aff": "^0.16.1"
+  },
+  "resolutions": {
+    "purescript-proxy": "~1.0.0"
+  }
+}
