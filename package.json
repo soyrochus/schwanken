@@ -1,0 +1,15 @@
+{
+  "name": "schwanken",
+  "version": "1.0.0",
+  "description": "Convert between Markdown tables and Excell files (xlxs)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^0.3.5",
+    "node-xlsx": "^0.7.1"
+  }
+}
