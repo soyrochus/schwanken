@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "babel": {
+   
+ },
   "author": "",
   "license": "ISC",
   "dependencies": {
