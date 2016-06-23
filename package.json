@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib --source-maps inline",
+    "minified": "babel src --out-file lib/schwanken-compiled.js --minified"
   },
-  "babel": {},
-  "author": "",
-  "license": "ISC",
+  "babel": {
+
+    "presets":["babel-preset-es2015"]
+  },
+  "author": "Iwan van der Kleijn <iwanvanderkleijn@gmail.com>",
+  "license": "MIT License",
   "dependencies": {
     "marked": "^0.3.5",
     "node-xlsx": "^0.7.1"
