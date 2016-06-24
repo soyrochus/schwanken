@@ -4,7 +4,7 @@
   "description": "Convert between Markdown tables and Excell files (xlxs)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "babel srctest -d test && mocha",
     "build": "babel src -d lib --source-maps inline",
     "minified": "babel src --out-file lib/schwanken-compiled.js --minified"
   },
