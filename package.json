@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "babel srctest -d test && mocha",
+    "buildtest": "babel src -d lib && babel srctest -d test && mocha",
     "build": "babel src -d lib --source-maps inline",
     "minified": "babel src --out-file lib/schwanken-compiled.js --minified"
   },
