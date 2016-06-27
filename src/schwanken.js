@@ -1,4 +1,23 @@
 
+export let num2alfa = num => {
+  let chars = 0;
+  //determine upperlimit
+  let power = 1;
+  while(Math.pow(26, power++) < num){
+  }
+
+  for(let i = (power - 1); i > 0; i--){
+      //=(POWER(26;1) * 6) + 1
+      let c = chars[i].toUpperCase().charCodeAt(0) - 64; // A != 0, Excell column numbering is 1-based
+      if ((chars.length - i) == 1){
+        num += c;
+      }else{
+        num += Math.pow(26, chars.length - i - 1) * c;
+      }
+  }
+  return num;
+};
+
 
 export let alfa2num = ref => {
   let num = 0;
@@ -13,7 +32,7 @@ export let alfa2num = ref => {
       }
   }
   return num;
-}
+};
 
 export let alfanum2struct = ref => {
 
